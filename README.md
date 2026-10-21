@@ -14,7 +14,7 @@ No server, no database, no build step: plain HTML/CSS/JS on GitHub Pages.
 
 ## How the data flows
 
-- **Members** tab: typed by hand. Rows with `active` = `no` or an empty `name` are hidden. An optional `photo_url` column shows a photo instead of the initials.
+- **Members** tab: typed by hand. Rows with `active` = `no` or an empty `name` are hidden. An optional `photo_url` column (a Google Drive share link or any image URL) shows a photo instead of the initials.
 - **Form Responses 1** tab: filled by the Google Form (timestamp, passcode, name, date, event name, description). Never published.
 - **Events** tab: row 1 holds the headers `event_name`, `date`, `description`, `submitted_by`, and A2 holds this formula, which keeps only today and future events, in date order, without the passcode:
 
@@ -28,6 +28,7 @@ Only the Members and Events tabs are published (File > Share > Publish to web > 
 
 - **Add a member:** add a row to Members, then add their name to the "Your name" dropdown in the Form.
 - **Hide a member:** set `active` to `no`.
+- **Add a member photo:** upload it to Google Drive, share it as "Anyone with the link", and paste that share link into the member's `photo_url` cell. Easiest: share one "Member photos" folder that way once, and every photo uploaded into it is ready to use. Square photos look best; without a photo, the member's initials show instead.
 - **Remove an event:** delete its row in Form Responses 1.
 - **Change the passcode:** in the Form, open the Passcode question's ⋮ > Response validation and change the pattern, e.g. `^NewPasscode$` (case sensitive).
 

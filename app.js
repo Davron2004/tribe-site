@@ -59,6 +59,14 @@
     return out;
   }
 
+  // A Drive share link ("drive.google.com/file/d/<id>/view?...") opens a viewer
+  // page, not an image; Drive's thumbnail endpoint serves the image itself.
+  // Any other URL is used as is.
+  function photoUrl(value) {
+    const id = (value.match(/drive\.google\.com\/.*?(?:\/d\/|[?&]id=)([\w-]+)/) || [])[1];
+    return id ? `https://drive.google.com/thumbnail?id=${id}&sz=w400` : value;
+  }
+
   // Initials circle; if the row has a photo_url that loads, the photo replaces them.
   function avatar(member) {
     const words = member.name.split(/\s+/);
@@ -67,7 +75,7 @@
       const img = new Image();
       img.alt = "";
       img.onload = () => node.replaceChildren(img);
-      img.src = member.photo_url;
+      img.src = photoUrl(member.photo_url);
     }
     return node;
   }
