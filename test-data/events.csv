@@ -1,0 +1,7 @@
+event_name,date,description,submitted_by
+November Mixer at the Aberdeen Pavilion,2026-11-05,"6:00 pm, Lansdowne Park. Our first mixer of the season: bring a colleague and a stack of business cards.",Sarah Chen
+"Founders' Breakfast: ""Selling to Government""",2026-11-18,"8:00 am, Rideau Advisory boardroom, 50 Sparks St.
+Seats are limited to 20. Register here: https://example.com/register.",Marc Tremblay
+<script>alert('x')</script>Holiday Social,2026-12-03,"5:30 pm, Bytown Brewery. <a href=""https://evil.example"">not a link</a> (details: https://example.com/holiday)",James O'Connor
+,2026-12-10,This row has no event name and must not appear.,Nobody
+2027 Planning Roundtable,2027-01-14,"12:00 pm, online.",Priya Nair

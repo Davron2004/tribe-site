@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events · The Tribe</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="brand">The Tribe</span>
+      <a href="../">Home</a>
+      <a href="../members/">Members</a>
+      <a href="./" aria-current="page">Events</a>
+    </nav>
+  </header>
+  <main>
+    <div class="head">
+      <div>
+        <h1>Events</h1>
+        <p class="lede">What's coming up, in date order.</p>
+      </div>
+      <button class="btn" type="button" id="add-event">Add an event</button>
+    </div>
+    <ul class="events" id="events"></ul>
+    <p class="state" id="status">Loading…</p>
+  </main>
+
+  <dialog class="modal" id="event-form" aria-labelledby="event-form-title">
+    <form method="dialog"><button class="close" aria-label="Close">&times;</button></form>
+    <div class="body">
+      <h2 id="event-form-title">Add an event</h2>
+      <p class="meta">You'll need the members' passcode. Ask Vivyen if you don't have it.</p>
+      <iframe class="form-frame" title="Add an event form"></iframe>
+      <p class="fine"><a target="_blank" rel="noopener">Open the form in a new tab</a></p>
+    </div>
+  </dialog>
+
+  <script src="../config.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>

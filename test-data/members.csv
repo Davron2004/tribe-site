@@ -1,0 +1,11 @@
+name,title,company,short_description,full_bio,email,linkedin,website,active
+Sarah Chen,Co-founder & CEO,Maple Ledger,"Bookkeeping and finance operations for early-stage tech companies.","Sarah spent eight years in finance at two Ottawa scale-ups before founding Maple Ledger in 2021. The firm now looks after the books, payroll and grant reporting for more than sixty early-stage companies across the region.
+
+She is a regular mentor at local accelerators and cares most about helping founders understand their numbers early, so that growth decisions are made with confidence rather than guesswork. Outside work she coaches youth hockey and is always up for a coffee along the canal.",sarah@example.com,https://www.linkedin.com/in/example,https://example.com,yes
+Marc Tremblay,Principal,Rideau Advisory,"Management consulting for federal suppliers and growing professional-services firms.",Marc advises federal suppliers on procurement strategy and helps professional-services firms scale without losing their culture.,marc@example.com,,,yes
+Priya Nair,Founder,Northgate Cloud,"Helping Ottawa SaaS teams find their first hundred customers.","Priya ran growth at two SaaS companies, then started Northgate to do the same for others: ""positioning first, ads later.""",priya@example.com,linkedin.com/in/example,northgate.example.com,yes
+James O'Connor,Partner,Bytown Legal LLP,"Corporate and commercial law for startups, from incorporation to exit.","James practises corporate law, with a focus on financings, M&A and shareholder agreements.",james@example.com,https://www.linkedin.com/in/example,https://example.com,yes
+Amélie Gagnon,Creative Director,Glebe Design Studio,"Brand and web design for B2B companies that want to look as good as they are.",<b>Amélie</b> <img src=x onerror=alert(1)> leads a four-person studio in the Glebe.,amelie@example.com,,https://example.com,yes
+Hidden Person,Former member,Gone Inc.,This row has active = no and must not appear.,,hidden@example.com,,,no
+,,Blank Name Co.,This row has no name and must not appear.,,,,,yes
+David Okafor,VP Sales,Kanata Photonics,Enterprise sales for optical sensing technology.,,,,,yes

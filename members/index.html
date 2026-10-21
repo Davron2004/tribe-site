@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Members · The Tribe</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="brand">The Tribe</span>
+      <a href="../">Home</a>
+      <a href="./" aria-current="page">Members</a>
+      <a href="../events/">Events</a>
+    </nav>
+  </header>
+  <main>
+    <div class="head">
+      <div>
+        <h1>Members</h1>
+        <p class="lede">The people behind Ottawa's growing businesses.</p>
+      </div>
+    </div>
+    <ul class="grid" id="members"></ul>
+    <p class="state" id="status">Loading…</p>
+  </main>
+
+  <dialog class="modal" id="member" aria-label="Member details">
+    <form method="dialog"><button class="close" aria-label="Close">&times;</button></form>
+    <div class="body"></div>
+  </dialog>
+
+  <script src="../config.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>
