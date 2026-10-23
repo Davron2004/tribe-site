@@ -10,6 +10,7 @@ No server, no database, no build step: plain HTML/CSS/JS on GitHub Pages.
 | `app.js` | Fetches the published CSVs and renders the Members and Events pages |
 | `style.css` | All styling; colours and spacing are tokens at the top |
 | `index.html`, `members/`, `events/` | The three pages |
+| `images/` | Side-panel photo (`bg.jpg`), white logo for the panel (`logo.svg`), browser-tab icon (`icon.svg`) |
 | `test-data/` | Sample CSVs, handy for local testing or for importing into a new Sheet |
 
 ## How the data flows
