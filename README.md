@@ -44,7 +44,14 @@ The passcode is light protection that keeps random visitors out; it is not real 
 
 ## Custom domain
 
-Add a `CNAME` file containing the domain, set the domain's DNS records to GitHub Pages ([instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)), and enter the domain under the repository's Settings > Pages. All links are relative, so nothing else changes.
+The site lives at https://ottawatribe.ca (registered at GoDaddy, on the client's account). Its DNS records there:
+
+| Type | Name | Value |
+|---|---|---|
+| A | `@` | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (four records) |
+| CNAME | `www` | `davron2004.github.io` |
+
+The `CNAME` file in this repo and the custom domain under Settings > Pages both say `ottawatribe.ca`; `www` redirects to it. If the repository moves to another GitHub account, change the `www` CNAME to that account's `<user>.github.io` ([GitHub's instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)). All links are relative, so nothing else changes.
 
 ## Local testing
 
