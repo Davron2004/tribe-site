@@ -17,6 +17,7 @@
 }
 
 *, ::before, ::after { box-sizing: border-box; }
+html { scrollbar-gutter: stable; }
 body { margin: 0; background: var(--bg); color: var(--text);
   font: 1.125rem/1.65 "Source Sans 3", "Source Sans Pro", Helvetica, sans-serif;
   -webkit-text-size-adjust: 100%; }
