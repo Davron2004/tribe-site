@@ -53,6 +53,8 @@ The site lives at https://ottawatribe.ca (registered at GoDaddy, on the client's
 
 The `CNAME` file in this repo and the custom domain under Settings > Pages both say `ottawatribe.ca`; `www` redirects to it. If the repository moves to another GitHub account, change the `www` CNAME to that account's `<user>.github.io` ([GitHub's instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)). All links are relative, so nothing else changes.
 
+"Enforce HTTPS" is on in Settings > Pages. If browsers ever call the site "not secure" (it is serving GitHub's `*.github.io` certificate), GitHub's certificate request for the domain got stuck, usually because the domain was saved before DNS pointed at GitHub. Remove the custom domain there and save `ottawatribe.ca` again to request a new certificate; GitHub commits a "Delete CNAME" and a "Create CNAME" to `main` when you do, so pull afterwards.
+
 ## Local testing
 
 ```sh
